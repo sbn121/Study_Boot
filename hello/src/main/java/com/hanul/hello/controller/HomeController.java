@@ -10,6 +10,7 @@ public class HomeController {
 	@RequestMapping("myInfo")
 	public String myInfo(Model model) {
 		model.addAttribute("name", "홍길동");
+		model.addAttribute("gender", "<b>남성</b>");
 		return "member/myInfo";
 	}
 }
